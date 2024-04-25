@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+}
+
+#container>div{
+  height: 80vh;
+  overflow-y: scroll;
+  width: 45%;
+  padding: 1rem;
+  box-shadow: 0 0 2px 2px #c5c3c3;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scrollbar-width: none;
+}
+
+#container>div>h2{
+  margin-bottom: 1rem;
+}
+
+#team-list-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#team-list-container{
+  height: 90%;
+  overflow-y: scroll;
+  padding: 0 1rem;
+  scrollbar-width: none;
+}
+
+#sorting-btn{
+  padding: 0.3rem 1rem;
+  border-radius: 0.625rem;
+  border: none;
+  cursor: pointer;
+  background-color: #411058;
+  color: #ffffff;
+}
+
+#average-age-card{
+  margin-top: 1rem;
+  box-shadow: 0 0 2px 2px #d3cece;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 868.5px) {
+  #container{
+      flex-direction: column;
+  }
+
+  #container>div{
+      width: 90%;
+  }
+}
+
+.employee-card-container{
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 1rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 2px 2px #c3c0c0;
+}
+
+.employee-card-container>button{
+  padding: 0.3rem 1rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #0000ff;
+  width: 80%;
+  align-self: center;
+}
+
+@media screen and (max-width: 472.5px){
+  .employee-card-container>button{
+      width: 100%;
+  }
+}
